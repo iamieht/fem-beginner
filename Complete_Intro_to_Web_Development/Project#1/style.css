@@ -7,6 +7,16 @@ html {
 .header-title {
     border-bottom: 3px solid black;
 }
+.titles {
+    font-family: Snell Roundhand;
+    font-size: 60px;
+    text-align: center;
+}
+.article-titles {
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+}
 .row {
     display: flex;
     flex-direction: row;
@@ -27,4 +37,43 @@ html {
 }
 .three-quarters {
     width: 75%;
+}
+.article-img {
+    width: 100%;
+}
+.other-sections {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.site-section {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.section-links {
+    color: #666;
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 30px;
+    font-weight: bold;
+    font-family: Futura;
+}
+.site-section-politics {
+    background-color: #ffeaa7;
+}
+.site-section-tech {
+    background-color: #81ecec;
+}
+.site-section-local {
+    background-color: #55efc4;
+}
+.site-section-opinion {
+    background-color: #74b9ff;
+}
+.site-section-sports {
+    background-color: #a29bfe;
 }
