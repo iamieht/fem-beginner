@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.header-title {
+    border-bottom: 3px solid black;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: stretch;
+    border-bottom: 3px solid black;
+    border-left: 1px solid black;
+}
+.story {
+    border-right: 1px solid black;
+    padding: 0 10px;
+}
+.quarter {
+    width: 25%;
+}
+.half {
+    width: 50%;
+}
+.three-quarters {
+    width: 75%;
+}
