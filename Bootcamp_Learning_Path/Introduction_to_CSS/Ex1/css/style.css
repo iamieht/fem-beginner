@@ -23,3 +23,27 @@ blockquote {
 cite {
     font-size: 1.5rem;
 }
+
+.bigbold {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* Pseudo Class */
+a:link {
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+    color: red;
+}
+
+a:visited {
+    color: green;
+    font-weight: normal;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
+    background-color: black;
+}
