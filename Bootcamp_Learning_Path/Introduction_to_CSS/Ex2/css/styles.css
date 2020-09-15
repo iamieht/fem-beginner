@@ -28,7 +28,20 @@ a:hover {
     font-size: 0.8rem;
     color: #89A611;
 }
+section {
+    border-bottom: 1px solid #DA0090;
+    margin-bottom: 0.3rem;
+}
 footer {
     text-align: center;
     font-size: 0.8rem;
+    border-top: 1px solid #a61f11;
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+footer li {
+    display: inline-block;
 }
