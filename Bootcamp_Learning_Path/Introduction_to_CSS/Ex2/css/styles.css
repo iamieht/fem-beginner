@@ -79,6 +79,19 @@ nav a:hover {
     color: #84de37;
     text-decoration: none;
 }
+article {
+    margin: 2rem 0;
+}
+article img {
+    float: left;
+    margin: 0 1rem 1rem 0;
+    border-radius: 1rem;
+}
+article::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 section {
     border-bottom: 1px solid #DA0090;
     margin-bottom: 0.3rem;
