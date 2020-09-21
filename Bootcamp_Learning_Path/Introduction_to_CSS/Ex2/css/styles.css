@@ -55,6 +55,30 @@ header {
 .rightheader p {
     margin-top: -0.5rem;
 }
+nav {
+    border-bottom: 1px solid #a61f11;
+    border-top: 1px solid #DA0090;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    text-decoration: none;
+    color: #73352E;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+nav a:hover {
+    background-color: black;
+    color: #84de37;
+    text-decoration: none;
+}
 section {
     border-bottom: 1px solid #DA0090;
     margin-bottom: 0.3rem;
