@@ -8,6 +8,7 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
+	background-image: url(../img/galaxy.jpg);
 }
 .wrapper {
 	width: 80%;
@@ -15,6 +16,7 @@ body {
 	padding: 1em;
 	display: flex;
 	flex-flow: row nowrap;
+	background-color: #efb106;
 }
 p {
 	margin-bottom: 0;
@@ -26,6 +28,11 @@ section {
 }
 aside {
 	flex-basis: 33%;
+}
+fieldset {
+	border: 1px solid black;
+	border-radius: 10px;
+	margin-bottom: 2rem;
 }
 
 
