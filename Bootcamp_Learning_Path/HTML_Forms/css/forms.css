@@ -34,6 +34,15 @@ fieldset {
 	border-radius: 10px;
 	margin-bottom: 2rem;
 }
+legend {
+	font-weight: bold;
+	font-size: 1.3rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+}
+label {
+	display: block;
+}
 
 
 
