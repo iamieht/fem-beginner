@@ -12,7 +12,6 @@ body {
     width: 400px;
     background-color: black;
     color: white;
-    border: 3px solid red;
 }
 .screen {
     color: white;
@@ -35,5 +34,30 @@ body {
     border: none;
     border-radius: 0;
     font-size: 40px;
+}
+.calc-button:hover {
+    background-color: #ebebeb;
+}
+.calc-button:active {
+    background-color: #bbbcbe;
+}
+.double {
+    flex-basis: 49.7%;
+}
+.triple {
+    flex-basis: 74.8%;
+}
+.calc-button:last-child {
+    background-color: #df974c;
+    color: white;
+}
+.calc-button:last-child:hover {
+    background-color: #dfb07e;
+}
+.calc-button:last-child:active {
+    background-color: #dd8d37;
+}
+.calc-button-row:last-child {
+    padding-bottom: 0;
 }
 
