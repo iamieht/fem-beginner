@@ -56,3 +56,20 @@ if (friendsAtYourParty === 10) {
 } else {
     console.log("Woooooo, play the dance music");
 }
+
+// Loops
+let friends = 0;
+
+while (friends < 10) {
+    friends += 1;
+}
+
+console.log(friends);
+
+friends = 0;
+
+for (let i = 0; i <= 10; i++) {
+    friends++;
+}
+
+console.log(friends);
