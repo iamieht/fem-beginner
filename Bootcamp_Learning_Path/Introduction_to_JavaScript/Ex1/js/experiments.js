@@ -19,3 +19,16 @@ console.log(sentence);
 const templateSentence = `Hello ${firstName} ${lastName}`;
 
 console.log(templateSentence);
+
+// Booleans
+
+const isTheSkyBlue = true;
+
+console.log(isTheSkyBlue);
+
+// Numbers
+
+const num = 5;
+const num2 = 2.5;
+
+console.log(num, num2);
