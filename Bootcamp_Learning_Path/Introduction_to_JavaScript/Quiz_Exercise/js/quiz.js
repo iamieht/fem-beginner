@@ -63,6 +63,13 @@ function multiplication(userAnswer, num1, num2) {
   // what is <num1> multiplied by <num2>?
   // 300 pts
   
+  const isCorrect = userAnswer === num1 * num2;
+
+  if (isCorrect) {
+    points += 300; 
+  }
+  return isCorrect;
+
 }
 
 function age(userAnswer, currentYear, birthYear) {
