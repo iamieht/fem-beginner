@@ -99,7 +99,7 @@ function larger(userAnswer, num1, num2) {
 
 function getScore() {
   // returns the current user's quiz score score
-
+  return points;
 }
 
 // DO NOT MODIFY CODE UNDER THIS COMMENT
