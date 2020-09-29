@@ -26,7 +26,7 @@ function canada(userAnswer) {
 function uppercase(userAnswer, word) {
   // what is <word> in all capital letters?
   // 200 pts
-  const isCorrect = userAnswer === word.toUperCase();
+  const isCorrect = userAnswer === word.toUpperCase();
   
   if (isCorrect) {
     points += 200; 
@@ -63,7 +63,7 @@ function multiplication(userAnswer, num1, num2) {
   // what is <num1> multiplied by <num2>?
   // 300 pts
   
-  const isCorrect = userAnswer === num1 * num2;
+  const isCorrect = userAnswer == num1 * num2;
 
   if (isCorrect) {
     points += 300; 
@@ -75,7 +75,7 @@ function multiplication(userAnswer, num1, num2) {
 function age(userAnswer, currentYear, birthYear) {
   // if someone was born in <birthYear> and already has had their birthday this year, how old are they?
   // 300 pts
-  const isCorrect = userAnswer === (currentYear - 1) - birthYear;
+  const isCorrect = userAnswer == (currentYear - birthYear) - 1;
   
   if (isCorrect) {
     points += 300; 
@@ -88,7 +88,7 @@ function age(userAnswer, currentYear, birthYear) {
 function larger(userAnswer, num1, num2) {
   // which of ${number4} and ${number5} is larger (if they're the same then pick that number)?
   // 300 pts
-  const isCorrect = userAnswer === Math.max(num1, num2);
+  const isCorrect = userAnswer == Math.max(num1, num2);
 
   if (isCorrect) {
     points += 300; 
