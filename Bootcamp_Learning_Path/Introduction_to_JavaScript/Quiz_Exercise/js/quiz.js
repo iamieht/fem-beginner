@@ -53,6 +53,10 @@ function squared(userAnswer, number) {
   
   const isCorrect = userAnswer == number ** 2;
   
+  if (isCorrect) {
+    points += 200; 
+  }
+  return isCorrect;
 }
 
 function multiplication(userAnswer, num1, num2) {
