@@ -75,6 +75,13 @@ function multiplication(userAnswer, num1, num2) {
 function age(userAnswer, currentYear, birthYear) {
   // if someone was born in <birthYear> and already has had their birthday this year, how old are they?
   // 300 pts
+  const isCorrect = userAnswer === (currentYear - 1) - birthYear;
+  
+  if (isCorrect) {
+    points += 300; 
+  }
+  return isCorrect;
+
 
 }
 
