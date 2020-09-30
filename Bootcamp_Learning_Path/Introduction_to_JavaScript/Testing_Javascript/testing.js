@@ -72,8 +72,16 @@ function addTwoToEveryNumberInTheList (list) {
     // sort a list of numbers into ascending order
     // if you need more help, Google how to do bubble sort
     // you can sort, if you want to write it by hand, use bubble sort or insertion sort
-  
-    return [1, 2, 3, 4];
+    list.sort(function(num1, num2) {
+        if (num1 > num2) {
+          return 1;
+        } else if (num1 < num2) {
+          return -1;
+        } else {
+          return 0;
+        }
+      });
+      return list;
   }
   
   // unit tests
