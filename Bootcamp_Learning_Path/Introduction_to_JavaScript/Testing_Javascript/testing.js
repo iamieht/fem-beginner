@@ -64,8 +64,15 @@ function addTwoToEveryNumberInTheList (list) {
   
   function getAllEngineers(list) {
     // using the same list as above, return a list of all people who have the word "Engineer" in their jobTitle
+    const listOfNames = [];
   
-    return ["Altaïr", "Ezio", "Connor", "Bayek", "Alexios"];
+    list.forEach(function(item) {
+        if (item.jobTitle.includes("Engineer")) {
+        listOfNames.push(item.name);
+        }
+    });
+    return listOfNames;
+
   }
   
   function sort(list) {
