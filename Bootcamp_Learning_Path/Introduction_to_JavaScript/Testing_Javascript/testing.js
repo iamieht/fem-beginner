@@ -55,8 +55,11 @@ function addTwoToEveryNumberInTheList (list) {
   
   function getAverageAge(list) {
     // using the same list as above, get the average age of all the workers'
-  
-    return 15;
+    let totalAge = 0;
+    list.forEach(function(item) {
+      totalAge += item.age;
+    });
+    return totalAge / list.length;
   }
   
   function getAllEngineers(list) {
