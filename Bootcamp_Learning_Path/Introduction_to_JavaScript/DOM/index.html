@@ -8,9 +8,22 @@
 </head>
 <body>
     <div class="red-square"></div>
+    <ul>
+        <li class="js-target">Unchanged</li>
+        <li class="js-target">Unchanged</li>
+        <li>Won't change</li>
+        <li class="js-target">Unchanged</li>
+        <li>Won't change</li>
+        <li class="js-target">Unchanged</li>
+    </ul>
 </body>
 <script>
     const redSquare = document.querySelector('.red-square');
     redSquare.style.backgroundColor = 'limegreen';
+    const elementsToChange = document.querySelectorAll('.js-target');
+    for (let i = 0; i < elementsToChange.length; i++) {
+        const currentElement = elementsToChange[i];
+        currentElement.innerText = "Modified by JavaScript!";
+    }
 </script>
 </html>
