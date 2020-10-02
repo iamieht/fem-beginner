@@ -27,6 +27,7 @@ function handleNumber(value) {
     } else {
         buffer += value;
     }
+    screen.innerText = buffer;
 }
 
 // start function
