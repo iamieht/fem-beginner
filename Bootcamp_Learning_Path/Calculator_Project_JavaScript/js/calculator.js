@@ -19,9 +19,15 @@ function buttonClick(value) {
 }
 
 // helper functions
-function handleSymbol() {}
+function handleSymbol(value) {}
 
-function handleNumber() {}
+function handleNumber(value) {
+    if (buffer === "0") {
+        buffer = value;
+    } else {
+        buffer += value;
+    }
+}
 
 // start function
 function init() {
