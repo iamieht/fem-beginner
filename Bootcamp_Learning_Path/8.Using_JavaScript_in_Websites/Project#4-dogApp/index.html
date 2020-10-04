@@ -2,16 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <title>Dogs</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dog Viewer</title>
+  <link rel="stylesheet" href="./css/dog.css">
 </head>
 
 <body>
-  <h1>Doggos</h1>
-  <button class="add-doggo">Add Doggo</button>
-  <div class="doggos">
+  <nav>
+    <ul class="nav-list">
+      <li>
+        <h1>Dog Viewer</h1>
+      </li>
+      <li>
+        <select id="breed">
+        </select>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <img id="main" class="main-image" src="" alt="main viewer" />
+    <span id="loader" class="loading-dog show">🐶</span>
   </div>
-  <select name="" id="" class="breeds"></select>
+
 
   <script src="./js/doggos.js"></script>
 </body>
