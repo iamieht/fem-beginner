@@ -51,3 +51,7 @@ body {
 .gone {
     display: none;
 }
+
+.hide {
+    display: none;
+}
