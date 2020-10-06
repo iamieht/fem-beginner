@@ -63,4 +63,21 @@ const moles = [
         king: false,
         node: document.getElementById('hole-9')
     }
-]
+];
+
+let runAgainAt = Date.now() + 100;
+function nextFrame () {
+    const now = Date.now();
+
+    if (runAgainAt <= now) {
+        for(let i = 0; i < moles.length; i++) {
+            if (moles[i].next <= now) {
+                getNextStatus(moles[i]);
+            }
+        }
+        runAgainAt = now + 100;
+    }
+    requestAnimationFrame(nextFrame)
+}
+
+nextFrame();
