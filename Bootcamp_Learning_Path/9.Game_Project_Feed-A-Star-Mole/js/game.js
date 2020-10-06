@@ -1,3 +1,5 @@
+let score = 0;
+
 function getSadInterval() {
     return Date.now() + 1000;
 }
@@ -113,7 +115,19 @@ function feed (event) {
     mole.next = getSadInterval();
     mole.node.children[0].src = './images/mole-fed.png';
     mole.node.children[0].classList.remove('hungry');
+
+    score++;
+
+    if (score >= 5) {
+        win();
+    }
+
 };
+
+function win () {
+    document.querySelector('.bg').classList.add("hide");
+    document.querySelector('.win').classList.remove("hide");
+}
 
 let runAgainAt = Date.now() + 100;
 function nextFrame () {
