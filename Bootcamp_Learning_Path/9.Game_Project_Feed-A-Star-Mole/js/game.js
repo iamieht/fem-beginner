@@ -139,10 +139,11 @@ function feed (event) {
     }
     mole.node.children[0].classList.remove('hungry');
 
-    if (score >= 5) {
+    if (score >= 10) {
         win();
     }
 
+    document.querySelector('.worm-container').style.width = `${10 * score}%`;
 };
 
 function win () {
