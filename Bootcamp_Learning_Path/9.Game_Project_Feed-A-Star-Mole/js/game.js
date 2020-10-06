@@ -2,6 +2,10 @@ function getSadInterval() {
     return Date.now() + 1000;
 }
 
+function getGoneInterval() {
+    return Date.now() + Math.floor(Math.random() * 18000) + 2000;
+}
+
 const moles = [
     {
         status: "sad",
@@ -64,6 +68,21 @@ const moles = [
         node: document.getElementById('hole-9')
     }
 ];
+
+function getNextStatus (mole) {
+    switch (mole.status) {
+        case "sad":
+            mole.next = getSadInterval();
+            mole.status = "leaving";
+            mole.node.src = '../images/mole-leaving.png';
+            break;
+        case "leaving":
+            mole.next = getGoneInterval();
+            mole.status = 'gone';
+            mole.node.children[0].classList.add("gone");
+            break;
+    }
+}
 
 let runAgainAt = Date.now() + 100;
 function nextFrame () {
