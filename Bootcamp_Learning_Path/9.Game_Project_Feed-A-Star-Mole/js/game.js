@@ -12,6 +12,10 @@ function getHungryInterval() {
     return Date.now() + Math.floor(Math.random() * 3000) + 2000;
 }
 
+function getKingStatus () {
+    return Math.random() > .9;
+}
+
 const moles = [
     {
         status: "sad",
@@ -81,7 +85,11 @@ function getNextStatus (mole) {
         case "fed":
             mole.next = getSadInterval();
             mole.status = "leaving";
-            mole.node.children[0].src = './images/mole-leaving.png';
+            if (mole.king) {
+                mole.node.children[0].src = './images/king-mole-leaving.png';
+            } else {
+                mole.node.children[0].src = './images/mole-leaving.png';
+            }
             break;
         case "leaving":
             mole.next = getGoneInterval();
@@ -90,16 +98,25 @@ function getNextStatus (mole) {
             break;
         case 'gone':
             mole.status = 'hungry';
+            mole.king = getKingStatus();
             mole.next = getHungryInterval();
             mole.node.children[0].classList.add("hungry");
             mole.node.children[0].classList.remove("gone");
-            mole.node.children[0].src = './images/mole-hungry.png';
+            if (mole.king) {
+                mole.node.children[0].src = './images/king-mole-hungry.png';
+            } else {
+                mole.node.children[0].src = './images/mole-hungry.png';
+            }            
             break;
         case 'hungry':
             mole.status = 'sad';
             mole.next = getSadInterval();
             mole.node.children[0].classList.remove("hungry");
-            mole.node.children[0].src = './images/mole-sad.png';
+            if (mole.king) {
+                mole.node.children[0].src = './images/king-mole-sad.png';
+            } else {
+                mole.node.children[0].src = './images/mole-sad.png';
+            }
             break;
     }
 }
@@ -113,10 +130,14 @@ function feed (event) {
     const mole = moles[parseInt(event.target.dataset.index)];
     mole.status = 'fed';
     mole.next = getSadInterval();
-    mole.node.children[0].src = './images/mole-fed.png';
+    if (mole.king) {
+        score += 2;
+        mole.node.children[0].src = './images/king-mole-fed.png';
+    } else {
+        score++;
+        mole.node.children[0].src = './images/mole-fed.png';
+    }
     mole.node.children[0].classList.remove('hungry');
-
-    score++;
 
     if (score >= 5) {
         win();
